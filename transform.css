@@ -1,0 +1,58 @@
+  .box {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      margin: 20px;
+      display: inline-block;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+    }
+
+    /* 1. Translate (move) */
+    .translate:hover {
+      transform: translate(50px, 20px);
+      background: red;
+    }
+
+    /* 2. Scale (resize) */
+    .scale:hover {
+      transform: scale(1.5);
+      background: green;
+    }
+
+    /* 3. Rotate */
+    .rotate:hover {
+      transform: rotate(45deg);
+      background: orange;
+    }
+
+    /* 4. Skew */
+    .skew:hover {
+      transform: skew(20deg, 10deg);
+      background: purple;
+    }
+
+    /* 5. Combine (translate + rotate + scale) */
+    .combine:hover {
+      transform: translate(30px, 20px) rotate(30deg) scale(1.2);
+      background: brown;
+    }
+
+     /* 6. RotateX (x axis up and down) */
+    .rotateX:hover {
+      transform: rotateX(45deg);
+      background: teal;
+    }
+
+    /* 7. RotateY (y axix left and right) */
+    .rotateY:hover {
+      transform: rotateY(45deg);
+      background: darkcyan;
+    }
+
+    /* 8. RotateZ (z axis) */
+    .rotateZ:hover {
+      transform: rotateZ(45deg);
+      background: darkred;
+    }
