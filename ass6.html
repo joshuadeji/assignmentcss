@@ -1,49 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us form 2</title>
-
+  <link rel="stylesheet" href="navbarforass.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #a00076; 
-  
+      background: #a00076;
+
       justify-content: center;
       align-items: center;
       height: 100%;
     }
 
-     ul {
-          list-style: none;
-          margin: 0;
-          padding: 15px;
-          display: flex;
-          gap: 15px;
-          width: 1500px;
-        }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      gap: 15px;
+      width: 1500px;
+    }
 
-        ul li a {
-          color: #7d3cff;
-          text-decoration: none;
-          font-weight: bold;
-          padding: 8px 12px;
-          border-radius: 5px;
-        }
+    ul li a {
+      color: #7d3cff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
 
-        ul li a:hover {
-          background: #7d3cff;
-          color: white;
-        }
-        
-          .body-middle{
+    ul li a:hover {
+      background: #7d3cff;
+      color: white;
+    }
+
+    .body-middle {
       display: flex;
       justify-content: center;
       align-items: center;
-      }
+    }
 
     .box {
       background: #fff;
@@ -53,13 +53,15 @@
       text-align: center;
     }
 
-    
+
     .box h2 {
       margin: 0 0 20px 0;
       font-size: 22px;
       color: #000000;
     }
-    .box input, .box textarea {
+
+    .box input,
+    .box textarea {
       width: 100%;
       border: none;
       border-bottom: 1px solid #ccc;
@@ -78,13 +80,15 @@
       border-radius: 5px;
       font-weight: bold;
     }
-
- 
   </style>
 </head>
-<body>
 
-   <ul>
+<body>
+  <nav class="navbar1">
+    <div class="logo">
+      <img src="food1.jpg">
+    </div>
+    <ul>
       <li><a href="index.html">Index</a><br /><br /></li>
       <li><a href="ass1.html">Ass 1</a><br /><br /></li>
       <li><a href="ass2.html">Ass 2</a><br /><br /></li>
@@ -95,22 +99,25 @@
       <li><a href="muhammed.html">Muhammed</a><br /><br /></li>
       <li><a href="insta.html">Insta</a><br /><br /></li>
       <li><a href="monalisha.html">Monalisha</a></li>
-    <li><a href="cookingblog.html">Cooking Blog</a></li>
-    <li><a href="vino-nav.html">Vino NavBar</a></li>
-      
-  </ul>   
+      <li><a href="cookingblog.html">Cooking Blog</a></li>
+      <li><a href="vino-nav.html">Vino NavBar</a></li>
+      <li><a href="checkers.html">Checkers</a></li>
 
-<div class="body-middle">
-  <div class="box">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required><br /><br /><br />
-      <div class="message"> <input type="text" placeholder="Message" required> </div>
-      
-      <button type="submit">Send Your Message</button>
-    </form>
-  </div>
+    </ul>
+  </nav>
+  
+  <div class="body-middle">
+    <div class="box">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required><br /><br /><br />
+        <div class="message"> <input type="text" placeholder="Message" required> </div>
+
+        <button type="submit">Send Your Message</button>
+      </form>
+    </div>
   </div>
 </body>
+
 </html>

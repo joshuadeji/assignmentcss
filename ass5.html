@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In Form</title>
+  <link rel="stylesheet" href="navbarforass.css">
   <style>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -16,53 +17,53 @@
     }
 
     ul {
-          list-style: none;
-          margin: 0;
-          padding: 15px;
-          display: flex;
-          gap: 15px;
-          width: 1500px;
-        }
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      gap: 15px;
+      width: 1500px;
+    }
 
-        ul li a {
-          color: #7d3cff;
-          text-decoration: none;
-          font-weight: bold;
-          padding: 8px 12px;
-          border-radius: 5px;
-        }
+    ul li a {
+      color: #7d3cff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
 
-        ul li a:hover {
-          background: #7d3cff;
-          color: white;
-        }
-        
-          .body-middle{
+    ul li a:hover {
+      background: #7d3cff;
+      color: white;
+    }
+
+    .body-middle {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      }
+    }
 
-      .outer-box {
-      width: 360px;  
-      height: 600px;  
+    .outer-box {
+      width: 360px;
+      height: 600px;
       border-radius: 12px;
       background-color: #7d3cff;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     }
 
-  
+
     .content {
       background: #fff;
       border-radius: 8px;
       width: 300px;
       height: 500px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-     
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
     }
 
     .form-body {
@@ -70,7 +71,7 @@
     }
 
     .form-body h1 {
-      color: #7d3cff; 
+      color: #7d3cff;
       margin-bottom: 10px;
     }
 
@@ -118,9 +119,13 @@
     }
   </style>
 </head>
-<body>
 
-   <ul>
+<body>
+  <nav class="navbar1">
+    <div class="logo">
+      <img src="food1.jpg">
+    </div>
+    <ul>
       <li><a href="index.html">Index</a><br /><br /></li>
       <li><a href="ass1.html">Ass 1</a><br /><br /></li>
       <li><a href="ass2.html">Ass 2</a><br /><br /></li>
@@ -131,36 +136,39 @@
       <li><a href="muhammed.html">Muhammed</a><br /><br /></li>
       <li><a href="insta.html">Insta</a><br /><br /></li>
       <li><a href="monalisha.html">Monalisha</a></li>
-    <li><a href="cookingblog.html">Cooking Blog</a></li>
-    <li><a href="vino-nav.html">Vino NavBar</a></li>
-      
-  </ul>   
-<div class="body-middle">
-  <div class="outer-box">
-    <div class="content">
-      <div class="form-body">
-        <form>
+      <li><a href="cookingblog.html">Cooking Blog</a></li>
+      <li><a href="vino-nav.html">Vino NavBar</a></li>
+      <li><a href="checkers.html">Checkers</a></li>
+    </ul>
+  </nav>
 
-          <h1>Sign in</h1>
+  <div class="body-middle">
+    <div class="outer-box">
+      <div class="content">
+        <div class="form-body">
+          <form>
 
-          <p>You know how much a squirrel misses his nuts? Yep, that's how much we missed you.</p>
-          <p><strong>Welcome Back.</strong></p>
+            <h1>Sign in</h1>
 
-          <input type="text" placeholder="Username or Email address" required>
-          <input type="password" placeholder="Password" required> 
+            <p>You know how much a squirrel misses his nuts? Yep, that's how much we missed you.</p>
+            <p><strong>Welcome Back.</strong></p>
 
-          <div class="checkbox-container">
-            <input type="checkbox" id="stay">
-            <label for="stay">Stay signed in for longer</label>
-          </div>
+            <input type="text" placeholder="Username or Email address" required>
+            <input type="password" placeholder="Password" required>
 
-          <button type="submit" class="purple-btn">Sign into your account</button>
-          <button type="button" class="gray-btn">Continue with Envato</button>
+            <div class="checkbox-container">
+              <input type="checkbox" id="stay">
+              <label for="stay">Stay signed in for longer</label>
+            </div>
 
-        </form>
+            <button type="submit" class="purple-btn">Sign into your account</button>
+            <button type="button" class="gray-btn">Continue with Envato</button>
+
+          </form>
+        </div>
       </div>
     </div>
   </div>
-  </div>
 </body>
+
 </html>

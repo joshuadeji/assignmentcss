@@ -1,0 +1,94 @@
+/* Table setup */
+.ludo {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.ludo td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+/* Top-left square (Green) */
+.ludo tr:nth-child(-n+6) td:nth-child(-n+6) {
+  background: green;
+}
+
+/* Top-right square (Blue) */
+.ludo tr:nth-child(-n+6) td:nth-child(n+10) {
+  background: dodgerblue;
+}
+
+/* Bottom-left square (Red) */
+.ludo tr:nth-child(n+10) td:nth-child(-n+6) {
+  background: crimson;
+}
+
+/* Bottom-right square (Yellow) */
+.ludo tr:nth-child(n+10) td:nth-child(n+10) {
+  background: gold;
+}
+
+/* Middle path (vertical white cross) */
+.ludo tr td:nth-child(8) {
+  background: white;
+}
+
+/* Middle path (horizontal white cross) */
+.ludo tr:nth-child(8) td {
+  background: white;
+}
+
+/* Center square (3×3 white box) */
+.ludo tr:nth-child(7) td:nth-child(7),
+.ludo tr:nth-child(7) td:nth-child(8),
+.ludo tr:nth-child(7) td:nth-child(9),
+.ludo tr:nth-child(8) td:nth-child(7),
+.ludo tr:nth-child(8) td:nth-child(8),
+.ludo tr:nth-child(8) td:nth-child(9),
+.ludo tr:nth-child(9) td:nth-child(7),
+.ludo tr:nth-child(9) td:nth-child(8),
+.ludo tr:nth-child(9) td:nth-child(9) {
+  background: white;
+}
+
+/* ===================== */
+/* HOME PATHS TO CENTER  */
+/* ===================== */
+
+/* Green path (Row 8, left side) */
+.ludo tr:nth-child(8) td:nth-child(2),
+.ludo tr:nth-child(8) td:nth-child(3),
+.ludo tr:nth-child(8) td:nth-child(4),
+.ludo tr:nth-child(8) td:nth-child(5),
+.ludo tr:nth-child(8) td:nth-child(6) {
+  background: green;
+}
+
+/* Yellow path (Row 8, right side) */
+.ludo tr:nth-child(8) td:nth-child(10),
+.ludo tr:nth-child(8) td:nth-child(11),
+.ludo tr:nth-child(8) td:nth-child(12),
+.ludo tr:nth-child(8) td:nth-child(13),
+.ludo tr:nth-child(8) td:nth-child(14) {
+  background: gold;
+}
+
+/* Red path (Column 8, bottom side) */
+.ludo tr:nth-child(10) td:nth-child(8),
+.ludo tr:nth-child(11) td:nth-child(8),
+.ludo tr:nth-child(12) td:nth-child(8),
+.ludo tr:nth-child(13) td:nth-child(8),
+.ludo tr:nth-child(14) td:nth-child(8) {
+  background: crimson;
+}
+
+/* Blue path (Column 8, top side) */
+.ludo tr:nth-child(2) td:nth-child(8),
+.ludo tr:nth-child(3) td:nth-child(8),
+.ludo tr:nth-child(4) td:nth-child(8),
+.ludo tr:nth-child(5) td:nth-child(8),
+.ludo tr:nth-child(6) td:nth-child(8) {
+  background: dodgerblue;
+}

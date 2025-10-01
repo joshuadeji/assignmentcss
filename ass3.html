@@ -2,81 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>class</title>
-    <style>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class</title>
+  <link rel="stylesheet" href="navbarforass.css">
+  <style>
+    body {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
 
-        body {
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-    
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 15px;
-          display: flex;
-          gap: 15px;
-          width: 1500px;
-        }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      gap: 15px;
+      width: 1500px;
+    }
 
-        ul li a {
-          color: #7d3cff;
-          text-decoration: none;
-          font-weight: bold;
-          padding: 8px 12px;
-          border-radius: 5px;
-        }
+    ul li a {
+      color: #7d3cff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
 
-        ul li a:hover {
-          background: #7d3cff;
-          color: white;
-        }
-        
-    .body-middle{
+    ul li a:hover {
+      background: #7d3cff;
+      color: white;
+    }
+
+    .body-middle {
       display: flex;
       justify-content: center;
       align-items: center;
-      }
+    }
 
-        p {
-            text-align:left;
-            font-size: 20px;
-            color: rgb(10, 172, 209);
-        }
+    p {
+      text-align: left;
+      font-size: 20px;
+      color: rgb(10, 172, 209);
+    }
 
-        .form {
-            width: fit-content;
-            padding: 30px;
-            border: 190px solid;
-            color: rgb(11, 203, 242);
-            margin: auto;
-        }
+    .form {
+      width: fit-content;
+      padding: 30px;
+      border: 190px solid;
+      color: rgb(11, 203, 242);
+      margin: auto;
+    }
 
-        input {
-            width: 300px;
-            height: 20px;
-            padding: 10px;
-        }
+    input {
+      width: 300px;
+      height: 20px;
+      padding: 10px;
+    }
 
 
-        button {
-            border: none;
-            width: 100%;
-            background-color: rgb(32, 185, 185);
-            height: 50px;
-            font-size: 15px;
-            color: white;
-        }
-    </style>
+    button {
+      border: none;
+      width: 100%;
+      background-color: rgb(32, 185, 185);
+      height: 50px;
+      font-size: 15px;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-
- <ul>
+  <nav class="navbar1">
+    <div class="logo">
+      <img src="food1.jpg">
+    </div>
+    <ul>
       <li><a href="index.html">Index</a><br /><br /></li>
       <li><a href="ass1.html">Ass 1</a><br /><br /></li>
       <li><a href="ass2.html">Ass 2</a><br /><br /></li>
@@ -87,21 +89,21 @@
       <li><a href="muhammed.html">Muhammed</a><br /><br /></li>
       <li><a href="insta.html">Insta</a><br /><br /></li>
       <li><a href="monalisha.html">Monalisha</a></li>
-    <li><a href="cookingblog.html">Cooking Blog</a></li>
+      <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
-  </ul>   
+      <li><a href="checkers.html">Checkers</a></li>
+    </ul>
+  </nav>
+
+  <form class="form">
+    <p>Login To Your Account</p>
+    <input type="text" id="text" placeholder="Username"><br><br>
+    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+    <button type="button">Login</button>
 
 
-    <form class="form">
-        <p>Login To Your Account</p>
-        <input type="text" id="text" placeholder="Username"><br><br>
-        <input type="password" name="password" id="password" placeholder="Password"><br><br>
-        <button type="button">Login</button>
-
-
-    </form>
+  </form>
 
 </body>
 
 </html>
-
