@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    /* base text color */
+}
+
+.mainbody {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Slider */
+.changingbkg {
+    position: relative;
+    /* changed to relative for overlay to be positioned inside */
+    width: 100%;
+    height: 100%;
+    animation: backgroundFade 20s infinite;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 2s ease-in-out;
+    z-index: 0;
+}
+
+/* Overlay div inside changingbkg */
+.changingbkg .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 30, 60, 0.6), rgba(0, 20, 50, 0.8));
+    z-index: 1;
+    pointer-events: none;
+    /* allows interaction with elements below */
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-image: url('vinobkg1.jpg');
+    }
+
+    25% {
+        background-image: url('vinobkg2.jpg');
+    }
+
+    50% {
+        background-image: url('vinobkg3.jpg');
+    }
+
+    75% {
+        background-image: url('vinobkg4.jpg');
+    }
+
+    100% {
+        background-image: url('vinobkg1.jpg');
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: relative;
+    z-index: 3;
+    /* above overlay and text */
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.pv {
+    font-size: 28px;
+    color: orange;
+}
+
+.number {
+    font-size: 14px;
+}
+
+/* Center Text Section */
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    /* above overlay but below navbar */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h6 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.welcome h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
