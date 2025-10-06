@@ -1,94 +1,99 @@
-/* Table setup */
-.ludo {
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  /* stack nav on top, body in middle */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+ul li a {
+  color: #7d3cff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background: #7d3cff;
+  color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #7d3cff;
+    cursor: pointer;
+}
+
+
+.body-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow-x: auto; 
+}
+
+
+/* Table design */
+table {
   border-collapse: collapse;
-  margin: 20px auto;
 }
 
-.ludo td {
-  width: 30px;
-  height: 30px;
-  border: 1px solid black;
+td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
 }
 
-/* Top-left square (Green) */
-.ludo tr:nth-child(-n+6) td:nth-child(-n+6) {
+.green {
   background: green;
+  border: 2px solid black;
 }
 
-/* Top-right square (Blue) */
-.ludo tr:nth-child(-n+6) td:nth-child(n+10) {
-  background: dodgerblue;
+.blue {
+  background: blue;
+  border: 2px solid black;
 }
 
-/* Bottom-left square (Red) */
-.ludo tr:nth-child(n+10) td:nth-child(-n+6) {
-  background: crimson;
+.red {
+  background: red;
+  border: 2px solid black;
 }
 
-/* Bottom-right square (Yellow) */
-.ludo tr:nth-child(n+10) td:nth-child(n+10) {
-  background: gold;
+.yellow {
+  background: yellow;
+  border: 2px solid black;
 }
 
-/* Middle path (vertical white cross) */
-.ludo tr td:nth-child(8) {
+.white {
   background: white;
+  border: 2px solid black;
 }
 
-/* Middle path (horizontal white cross) */
-.ludo tr:nth-child(8) td {
+.center {
   background: white;
+  border: 2px solid black;
 }
 
-/* Center square (3×3 white box) */
-.ludo tr:nth-child(7) td:nth-child(7),
-.ludo tr:nth-child(7) td:nth-child(8),
-.ludo tr:nth-child(7) td:nth-child(9),
-.ludo tr:nth-child(8) td:nth-child(7),
-.ludo tr:nth-child(8) td:nth-child(8),
-.ludo tr:nth-child(8) td:nth-child(9),
-.ludo tr:nth-child(9) td:nth-child(7),
-.ludo tr:nth-child(9) td:nth-child(8),
-.ludo tr:nth-child(9) td:nth-child(9) {
-  background: white;
-}
+@media (max-width: 750px) {
+    .navbar1 ul.nav-links {
+        display: none !important; /* hide links */
+    }
 
-/* ===================== */
-/* HOME PATHS TO CENTER  */
-/* ===================== */
-
-/* Green path (Row 8, left side) */
-.ludo tr:nth-child(8) td:nth-child(2),
-.ludo tr:nth-child(8) td:nth-child(3),
-.ludo tr:nth-child(8) td:nth-child(4),
-.ludo tr:nth-child(8) td:nth-child(5),
-.ludo tr:nth-child(8) td:nth-child(6) {
-  background: green;
-}
-
-/* Yellow path (Row 8, right side) */
-.ludo tr:nth-child(8) td:nth-child(10),
-.ludo tr:nth-child(8) td:nth-child(11),
-.ludo tr:nth-child(8) td:nth-child(12),
-.ludo tr:nth-child(8) td:nth-child(13),
-.ludo tr:nth-child(8) td:nth-child(14) {
-  background: gold;
-}
-
-/* Red path (Column 8, bottom side) */
-.ludo tr:nth-child(10) td:nth-child(8),
-.ludo tr:nth-child(11) td:nth-child(8),
-.ludo tr:nth-child(12) td:nth-child(8),
-.ludo tr:nth-child(13) td:nth-child(8),
-.ludo tr:nth-child(14) td:nth-child(8) {
-  background: crimson;
-}
-
-/* Blue path (Column 8, top side) */
-.ludo tr:nth-child(2) td:nth-child(8),
-.ludo tr:nth-child(3) td:nth-child(8),
-.ludo tr:nth-child(4) td:nth-child(8),
-.ludo tr:nth-child(5) td:nth-child(8),
-.ludo tr:nth-child(6) td:nth-child(8) {
-  background: dodgerblue;
+    .menu-icon {
+        display: block; /* show menu icon */
+    }
 }

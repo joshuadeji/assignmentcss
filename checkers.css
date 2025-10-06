@@ -1,23 +1,26 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    font-family: Arial, sans-serif;
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px;
 }
 
+.navbar1 .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 
-ul {
+.navbar1 ul.nav-links {
     list-style: none;
     margin: 0;
-    padding: 15px;
+    padding: 0;
     display: flex;
     gap: 15px;
-    justify-content: center;
 }
 
-
-ul li a {
+.navbar1 ul.nav-links li a {
     color: #7d3cff;
     text-decoration: none;
     font-weight: bold;
@@ -25,18 +28,38 @@ ul li a {
     border-radius: 5px;
 }
 
-ul li a:hover {
+.navbar1 ul.nav-links li a:hover {
     background: #7d3cff;
     color: white;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #7d3cff;
+    cursor: pointer;
+}
+
+/* CHESSBOARD */
 .body-middle {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    /* pushes the board below the nav links */
+    overflow-x: auto; 
 }
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    .navbar1 ul.nav-links {
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
 
 
 .chessboard {

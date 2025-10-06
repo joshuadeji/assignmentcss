@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram Post</title>
-  <link rel="stylesheet" href="navbarforass.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <style>
     body {
@@ -14,13 +13,29 @@
       margin: 0;
     }
 
+    .navbar1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     ul {
       list-style: none;
       margin: 0;
       padding: 15px;
       display: flex;
       gap: 15px;
-      width: 1500px;
     }
 
     ul li a {
@@ -36,6 +51,12 @@
       color: white;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: #7d3cff;
+    }
+
     .body-middle {
       display: flex;
       justify-content: center;
@@ -47,7 +68,6 @@
       max-width: 400px;
       width: 100%;
     }
-
 
     .instag {
       background: #fff;
@@ -85,7 +105,6 @@
     .header {
       display: flex;
       align-items: center;
-
     }
 
     .header img {
@@ -114,7 +133,6 @@
     .post-actions {
       display: flex;
       gap: 17px;
-
     }
 
     .likes {
@@ -136,14 +154,25 @@
       color: #1877f2;
       font-size: 14px;
     }
+
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <nav class="navbar1">
     <div class="logo">
-      <img src="food1.jpg">
+      <img src="food1.jpg" alt="logo">
     </div>
+
     <ul>
       <li><a href="index.html">Index</a></li>
       <li><a href="ass1.html">Ass 1</a></li>
@@ -158,14 +187,17 @@
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
-
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
+
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
   </nav>
+
   <div class="body-middle">
     <div class="frontpage">
-
       <div class="instag">
-
         <div class="stories">
           <div class="story"><img src="pic1.jpg" alt="story"></div>
           <div class="story"><img src="pic2.jpg" alt="story"></div>
@@ -173,12 +205,11 @@
           <div class="story"><img src="pic4.jpg" alt="story"></div>
         </div>
 
-
         <div class="header">
           <img src="profilepic.png.png" alt="profile">
           <div class="user">
             <h4>Kousik Gupta</h4>
-            <p><i class="fa fa-location-dot"></i> Sector-V,Salt Lake City</p>
+            <p><i class="fa fa-location-dot"></i> Sector-V, Salt Lake City</p>
           </div>
         </div>
 
@@ -193,17 +224,15 @@
         <div class="likes">Liked by Palash Ghosh and 15 others</div>
 
         <div class="caption">
-          <span> Kousik_gupta </span> &lt; &gt; 💚
+          <span>Kousik_gupta</span> &lt; &gt; 💚
         </div>
 
         <div class="hashtags">
-          #web_design #web_development </br> #web_developer #youtuber
+          #web_design #web_development <br> #web_developer #youtuber
         </div>
-
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

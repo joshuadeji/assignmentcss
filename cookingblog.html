@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cooking Blog</title>
-  <link rel="stylesheet" href="navbarforass.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,17 +14,32 @@
       padding: 0;
     }
 
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 15px;
+    .navbar1 {
       display: flex;
-      gap: 15px;
-      width: 1500px;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
     }
 
-    ul li a {
+    .navbar1 .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .navbar1 ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .navbar1 ul li a {
       color: #7d3cff;
       text-decoration: none;
       font-weight: bold;
@@ -32,9 +47,16 @@
       border-radius: 5px;
     }
 
-    ul li a:hover {
+    .navbar1 ul li a:hover {
       background: #7d3cff;
       color: white;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: #7d3cff;
+      cursor: pointer;
     }
 
     .body-middle {
@@ -92,7 +114,6 @@
       margin: 0;
       color: #060606;
       font-size: 14px;
-
     }
 
     .timecomment {
@@ -100,7 +121,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 13px;
-      color: #000000;
+      color: #000;
       padding: 12px 16px;
     }
 
@@ -108,14 +129,34 @@
       display: flex;
       align-items: center;
     }
+
+    @media (max-width: 750px) {
+      .navbar1 ul {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-container .card {
+        margin-bottom: 30px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <nav class="navbar1">
     <div class="logo">
-      <img src="food1.jpg">
+      <img src="food1.jpg" alt="logo">
     </div>
+
     <ul>
       <li><a href="index.html">Index</a></li>
       <li><a href="ass1.html">Ass 1</a></li>
@@ -130,9 +171,14 @@
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
-
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
+
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
   </nav>
+
   <div class="body-middle">
     <div class="card-container">
 
@@ -152,7 +198,6 @@
           <span>💬 39 Comments</span>
         </div>
       </div>
-
 
       <div class="card">
         <div class="card-header">
@@ -185,6 +230,7 @@
           <span>💬 9 Comments</span>
         </div>
       </div>
+
     </div>
   </div>
 </body>

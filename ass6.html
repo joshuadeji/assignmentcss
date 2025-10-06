@@ -6,15 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us form 2</title>
   <link rel="stylesheet" href="navbarforass.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #a00076;
-
       justify-content: center;
       align-items: center;
       height: 100%;
+    }
+
+    .navbar1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 20px;
+    }
+
+    .navbar1 .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
     }
 
     ul {
@@ -39,6 +56,13 @@
       color: white;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 35px;
+      color: #7d3cff;
+      cursor: pointer;
+    }
+
     .body-middle {
       display: flex;
       justify-content: center;
@@ -52,7 +76,6 @@
       width: 500px;
       text-align: center;
     }
-
 
     .box h2 {
       margin: 0 0 20px 0;
@@ -70,7 +93,6 @@
       font-size: 15px;
     }
 
-
     .box button {
       width: 50%;
       background: #e63950;
@@ -80,6 +102,27 @@
       border-radius: 5px;
       font-weight: bold;
     }
+
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      ul.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
   </style>
 </head>
 
@@ -88,7 +131,8 @@
     <div class="logo">
       <img src="food1.jpg">
     </div>
-    <ul>
+    <i class='bx bx-menu menu-icon' onclick="toggleMenu()"></i>
+    <ul id="nav-links">
       <li><a href="index.html">Index</a><br /><br /></li>
       <li><a href="ass1.html">Ass 1</a><br /><br /></li>
       <li><a href="ass2.html">Ass 2</a><br /><br /></li>
@@ -102,22 +146,29 @@
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
-
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
   </nav>
-  
+
   <div class="body-middle">
     <div class="box">
       <h2>Contact Us</h2>
       <form>
         <input type="text" placeholder="Name" required>
         <input type="email" placeholder="Email" required><br /><br /><br />
-        <div class="message"> <input type="text" placeholder="Message" required> </div>
-
+        <div class="message">
+          <input type="text" placeholder="Message" required>
+        </div>
         <button type="submit">Send Your Message</button>
       </form>
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>

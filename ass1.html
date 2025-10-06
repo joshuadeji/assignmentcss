@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Form 1</title>
-  <link rel="stylesheet" href="navbarforass.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -15,15 +21,33 @@
       flex-direction: column;
       align-items: center;
       height: 100%;
+      overflow-x: hidden;
+    }
+
+    .navbar1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     ul {
       list-style: none;
       margin: 0;
-      padding: 15px;
+      padding: 0;
       display: flex;
       gap: 15px;
-      width: 1500px;
+      flex-wrap: wrap;
     }
 
     ul li a {
@@ -38,6 +62,13 @@
       background: #7d3cff;
       color: white;
     }
+
+    .menu {
+      font-size: 35px;
+      color: #7d3cff;
+      display: none;
+    }
+
 
     .body-middle {
       display: flex;
@@ -65,7 +96,6 @@
       border-radius: 8px 8px 0 0;
     }
 
-
     .form-body {
       padding: 15px;
     }
@@ -92,29 +122,44 @@
       display: block;
       margin: 15px auto 0 auto;
     }
+
+
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <nav class="navbar1">
     <div class="logo">
-      <img src="food1.jpg">
+      <img src="food1.jpg" alt="Logo">
     </div>
+
     <ul>
-      <li><a href="index.html">Index</a><br /><br /></li>
-      <li><a href="ass1.html">Ass 1</a><br /><br /></li>
-      <li><a href="ass2.html">Ass 2</a><br /><br /></li>
-      <li><a href="ass3.html">Ass 3</a><br /><br /></li>
-      <li><a href="ass4.html">Ass 4</a><br /><br /></li>
-      <li><a href="ass5.html">Ass 5</a><br /><br /></li>
-      <li><a href="ass6.html">Ass 6</a><br /><br /></li>
-      <li><a href="muhammed.html">Muhammed</a><br /><br /></li>
-      <li><a href="insta.html">Insta</a><br /><br /></li>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="ass1.html">Ass 1</a></li>
+      <li><a href="ass2.html">Ass 2</a></li>
+      <li><a href="ass3.html">Ass 3</a></li>
+      <li><a href="ass4.html">Ass 4</a></li>
+      <li><a href="ass5.html">Ass 5</a></li>
+      <li><a href="ass6.html">Ass 6</a></li>
+      <li><a href="muhammed.html">Muhammed</a></li>
+      <li><a href="insta.html">Insta</a></li>
       <li><a href="monalisha.html">Monalisha</a></li>
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
+
+    <i class='bx bx-menu menu'></i>
   </nav>
 
   <div class="body-middle">
@@ -131,7 +176,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

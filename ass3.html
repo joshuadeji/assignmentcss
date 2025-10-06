@@ -5,12 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>class</title>
-  <link rel="stylesheet" href="navbarforass.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <style>
     body {
       justify-content: center;
       align-items: center;
       height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav.navbar1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
     }
 
     ul {
@@ -33,6 +52,13 @@
     ul li a:hover {
       background: #7d3cff;
       color: white;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      color: #7d3cff;
+      display: none;
+      cursor: pointer;
     }
 
     .body-middle {
@@ -61,7 +87,6 @@
       padding: 10px;
     }
 
-
     button {
       border: none;
       width: 100%;
@@ -69,6 +94,20 @@
       height: 50px;
       font-size: 15px;
       color: white;
+    }
+
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      nav.navbar1 {
+        justify-content: space-between;
+      }
     }
   </style>
 </head>
@@ -78,21 +117,25 @@
     <div class="logo">
       <img src="food1.jpg">
     </div>
+
     <ul>
-      <li><a href="index.html">Index</a><br /><br /></li>
-      <li><a href="ass1.html">Ass 1</a><br /><br /></li>
-      <li><a href="ass2.html">Ass 2</a><br /><br /></li>
-      <li><a href="ass3.html">Ass 3</a><br /><br /></li>
-      <li><a href="ass4.html">Ass 4</a><br /><br /></li>
-      <li><a href="ass5.html">Ass 5</a><br /><br /></li>
-      <li><a href="ass6.html">Ass 6</a><br /><br /></li>
-      <li><a href="muhammed.html">Muhammed</a><br /><br /></li>
-      <li><a href="insta.html">Insta</a><br /><br /></li>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="ass1.html">Ass 1</a></li>
+      <li><a href="ass2.html">Ass 2</a></li>
+      <li><a href="ass3.html">Ass 3</a></li>
+      <li><a href="ass4.html">Ass 4</a></li>
+      <li><a href="ass5.html">Ass 5</a></li>
+      <li><a href="ass6.html">Ass 6</a></li>
+      <li><a href="muhammed.html">Muhammed</a></li>
+      <li><a href="insta.html">Insta</a></li>
       <li><a href="monalisha.html">Monalisha</a></li>
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
+
+    <i class='bx bx-menu menu-icon'></i>
   </nav>
 
   <form class="form">
@@ -100,8 +143,6 @@
     <input type="text" id="text" placeholder="Username"><br><br>
     <input type="password" name="password" id="password" placeholder="Password"><br><br>
     <button type="button">Login</button>
-
-
   </form>
 
 </body>

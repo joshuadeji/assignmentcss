@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monalisha Roy</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="navbarforass.css">
   <style>
     html,
     body {
@@ -16,6 +15,21 @@
       font-family: Arial, sans-serif;
     }
 
+    .navbar1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    .navbar1 .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+    }
 
     ul {
       list-style: none;
@@ -23,7 +37,6 @@
       padding: 15px;
       display: flex;
       gap: 15px;
-      width: 1500px;
     }
 
     ul li a {
@@ -39,6 +52,11 @@
       color: white;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: #7d3cff;
+    }
 
     .body-middle {
       display: flex;
@@ -53,7 +71,6 @@
       background: rgba(255, 255, 255, 0.1);
       text-align: center;
     }
-
 
     .card img {
       width: 100px;
@@ -128,6 +145,16 @@
       background: rgba(255, 255, 255, 0.2);
       color: #fff;
     }
+    
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
   </style>
 </head>
 
@@ -150,11 +177,12 @@
       <li><a href="cookingblog.html">Cooking Blog</a></li>
       <li><a href="vino-nav.html">Vino NavBar</a></li>
       <li><a href="checkers.html">Checkers</a></li>
-
+      <li><a href="ludo.html">Ludo</a></li>
     </ul>
+    <i class="fas fa-bars menu-icon"></i>
   </nav>
-  <div class="body-middle">
 
+  <div class="body-middle">
     <div class="card">
       <img src="profilepic.png.png">
       <h2>Monalisha Roy</h2>
@@ -174,5 +202,4 @@
     </div>
   </div>
 </body>
-
 </html>
